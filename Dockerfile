@@ -1,9 +1,8 @@
 # Add the hello world file and execute upon container launch
 FROM ubuntu:latest
 MAINTAINER Chandrakala
-RUN apt-get update 
-RUN apt-get install -y python python-pip
-RUN pip install --upgrade pip
+RUN apt-get update
+RUN apt-get install -y python3
 ADD hello.py /home/hello.py
 WORKDIR /home
-CMD pyhton hello.py
+CMD python3 hello.py
