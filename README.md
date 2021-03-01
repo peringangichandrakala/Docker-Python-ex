@@ -3,17 +3,17 @@
 The below are the steps to create a simple hello world python program
 ----------------------------------------------------------------------
 
-git clone https://github.com/peringangichandrakala/Docker-Python-ex.git
+$ git clone https://github.com/peringangichandrakala/Docker-Python-ex.git
 
-cd Docker-Python-ex/
+$ cd Docker-Python-ex/
 
-docker build -t mypthonimg:v1 .
+$ docker build -t mypthonimg:v1 .
 
 REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
 
 mypthonimg   v1        7d34fc83aa24   7 seconds ago   139MB
 
-docker run -it 7d34fc83aa24
+$ docker run -it 7d34fc83aa24
 
 *O/p:* Hello World
 
@@ -26,9 +26,10 @@ docker push pchandrakala/mypythonhelloworld:latest
 
 To test if its working:
 --
-docker pull pchandrakala/mypythonhelloworld:latest
 
-docker run -it pchandrakala/mypythonhelloworld:latest
+$ docker pull pchandrakala/mypythonhelloworld:latest
+
+$ docker run -it pchandrakala/mypythonhelloworld:latest
 
 
 o/p:
