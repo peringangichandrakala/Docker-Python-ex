@@ -9,6 +9,11 @@ $ cd Docker-Python-ex/
 
 $ docker build -t mypthonimg:v1 .
 
+
+
+docker images
+
+
 REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
 
 mypthonimg   v1        7d34fc83aa24   7 seconds ago   139MB
